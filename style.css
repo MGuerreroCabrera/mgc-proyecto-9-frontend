@@ -1,0 +1,113 @@
+/* Importar la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --mgc-color-001: white;
+    --mgc-color-002: #171717;
+
+    --mgc-white: var(--mgc-color-001);
+    --mgc-nearly-black: var(--mgc-color-002);
+    
+  
+    /* Margins */
+    --mgc-margin-xs: 2px;
+    --mgc-margin-s: 5px;
+    --mgc-margin-m: 10px;
+    --mgc-margin-l: 20px;
+    --mgc-margin-xl: 40px;
+  
+    /* Paddings */
+    --mgc-padding-xs: 2px;
+    --mgc-padding-s: 5px;
+    --mgc-padding-m: 10px;
+    --mgc-padding-l: 20px;
+    --mgc-padding-xl: 40px;
+  
+    /* Gaps */
+    --mgc-gap-xs: 2px;
+    --mgc-gap-s: 5px;
+    --mgc-gap-m: 10px;
+    --mgc-gap-l: 20px;
+    --mgc-gap-xl: 40px;
+  
+    /* Border radius */
+    --mgc-radius-xs: 2px;
+    --mgc-radius-s: 5px;
+    --mgc-radius-m: 10px;
+    --mgc-radius-l: 20px;
+    --mgc-radius-xl: 40px;
+
+    /* Fonts */
+    --mgc-font: "Montserrat", sans-serif;
+  
+    /* Font sizes */
+    --mgc-font-size-ultra-sm: clamp(0.4rem, 0.17vw + 0.66rem, 0.89rem);
+    --mgc-font-size-sm: clamp(0.7rem, 0.17vw + 0.66rem, 0.89rem);
+    --mgc-font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --mgc-font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --mgc-font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --mgc-font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    
+  }
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: var(--mgc-font);
+    color: var(--mgc-nearly-black);
+}
+
+#app {
+    width: 100%;
+    height: 100svh;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    padding: var(--mgc-padding-l);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > h1 {
+    font-size: var(--mgc-font-size-lg);
+}
+
+.productsContainer {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--mgc-gap-m);
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    width: 150px;
+    height: 250px;
+    border: 1px solid var(--mgc-nearly-black);
+    border-radius: var(--mgc-radius-m);
+    padding: var(--mgc-padding-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    box-shadow: -1px 1px 4px 0px var(--mgc-nearly-black);
+}
+
+.product > p {
+    font-size: var(--mgc-font-size-sm);
+    text-align: center;
+}
+
+.price {
+    font-size: var(--mgc-font-size-ultra-sm);
+    text-align: center;
+}
